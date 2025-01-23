@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="VueApp">
+        <h1>Belajar Vue.Js</h1>
+        
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+
+        <blog-post title="Blehblehbleh" desc="blog post pertama"></blog-post>
+        <blog-post title="Hewahunja" desc="blog post kedua"></blog-post>
+        <blog-post title="Dahlah" desc="blog post ketiga"></blog-post>
+
+        <social title="Facebook" :link="'https://facebook.com'"></social>
+        <social title="Youtube" :link="'https://' + title + '.com'"></social>
+        <social title="Twitter" :link="'https://' + title + '.com'"></social>
+
+
+    </div>
+
+    <script type="text/x-template" id="social-template">
+        <h3>{{ title }}</h3>
+        <a href="{{ link }}" target="_blank">{{ title }}.com</p>
+    </script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const app = Vue.createApp({})
+
+        app.component('button-counter', {
+            data() {
+                return {
+                    count: 0
+                }
+            },
+            template:
+                `
+                    <button v-on:click="count++">
+                        You clicked me {{ count }} times.
+                    </button>
+                `
+        })
+
+        app.component('blog-post', {
+            props: ['title', 'desc'],
+            template: 
+                `
+                    <h3>{{ title }}</h3>
+                    <p>{{ desc }}</p>
+                `
+        })
+
+        app.component('social', {
+            props: ['title', 'link'],
+            template: '#social-template'
+                
+        })
+
+        app.mount('#VueApp')
+
+    </script>
+
+</body>
+
+</html>
