@@ -21,12 +21,11 @@
         <social title="Youtube" :link="'https://' + title + '.com'"></social>
         <social title="Twitter" :link="'https://' + title + '.com'"></social>
 
-
     </div>
 
     <script type="text/x-template" id="social-template">
         <h3>{{ title }}</h3>
-        <a href="{{ link }}" target="_blank">{{ title }}.com</p>
+        <a :href="link" target="_blank">{{ title }}.com</a>
     </script>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -41,7 +40,7 @@
                 }
             },
             template:
-                `
+                ` 
                     <button v-on:click="count++">
                         You clicked me {{ count }} times.
                     </button>
@@ -51,7 +50,7 @@
         app.component('blog-post', {
             props: ['title', 'desc'],
             template: 
-                `
+                ` 
                     <h3>{{ title }}</h3>
                     <p>{{ desc }}</p>
                 `
@@ -60,13 +59,9 @@
         app.component('social', {
             props: ['title', 'link'],
             template: '#social-template'
-                
         })
 
         app.mount('#VueApp')
-
     </script>
-
 </body>
-
 </html>
