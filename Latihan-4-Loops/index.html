@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="VueApp">
+        <h1>Belajar Vue.Js</h1>
+        <ol>
+            <li v-for="subject in subject" :key="subject.title">
+                {{ subject.title }} - <strong>Type</strong> - {{ subject.type }}
+            </li>
+        </ol>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const sample = {
+            data() {
+                return {
+                    subject: [
+                        { title: 'JavaScript', type: 'native' },
+                        { title: 'Vue', type: 'framework' },
+                        { title: 'React', type: 'framework' }
+                    ]
+                }
+            }
+        }
+
+        Vue.createApp(sample).mount('#VueApp')
+
+    </script>
+
+</body>
+
+</html>
