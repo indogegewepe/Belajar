@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="VueApp">
+        <h1>Belajar Vue{{ subject }}</h1>
+        <p>Numbers : {{ numbers }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const sample = {
+            data() {
+                return {
+                    subject: '.Js',
+                    numbers : 0
+                }
+            },
+            mounted() {
+                setInterval(() => {
+                    this.numbers++
+                }, 100)
+            }
+        }
+    
+
+        Vue.createApp(sample).mount('#VueApp')
+    
+    </script>
+
+</body>
+
+</html>
