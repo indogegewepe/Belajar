@@ -4,8 +4,17 @@
 
 ---
 
-# 🙎‍♀️ Kontribusi
+# 📚 Topik yang Tersedia
+<li>**Laravel** : Framework PHP untuk pengembangan aplikasi web modern yang menawarkan sintaksis elegan dan ekosistem kaya fitur.
+<li>**JavaScript** : Bahasa pemrograman inti untuk pengembangan web, mencakup DOM manipulation, ES6+, dan berbagai teknik lainnya.
+<li>**HTML** : Dasar dari semua halaman web. Di sini, Anda akan menemukan panduan lengkap untuk membangun struktur website.
+<li>**Python** : Bahasa serbaguna untuk berbagai keperluan, termasuk analisis data, machine learning, hingga pengembangan aplikasi.
+<li>**C++** : Bahasa pemrograman berorientasi objek yang kuat untuk pengembangan aplikasi yang membutuhkan kinerja tinggi.
+<li>**Vue.Js** : Framework JavaScript progresif untuk membangun antarmuka pengguna modern dengan fitur-fitur reaktif yang canggih.
 
+---
+
+# 🙎‍♀️ Kontribusi
 Kami sangat terbuka untuk kontribusi Anda! Berikut adalah beberapa cara Anda dapat membantu:
 1. Menambahkan tutorial baru.<br>
 2. Memperbaiki bug atau menambahkan fitur pada proyek mini.<br>
@@ -21,3 +30,8 @@ Kami sangat terbuka untuk kontribusi Anda! Berikut adalah beberapa cara Anda dap
 4. Push perubahan ke fork Anda:<br>
 `git push origin nama-branch-anda`<br>
 5. Ajukan pull request ke repositori utama dengan deskripsi yang jelas tentang perubahan Anda.<br>
+
+---
+
+# 🤝 Komunitas yang Mendukung
+Kami percaya bahwa belajar menjadi lebih mudah dan menyenangkan jika dilakukan bersama. Tempat Belajar dirancang untuk menjadi ruang kolaborasi bagi semua kalangan, dari pemula hingga profesional. Dengan bergabung, Anda juga memiliki kesempatan untuk terhubung dengan sesama pengembang, berbagi wawasan, dan membangun portofolio Anda.
