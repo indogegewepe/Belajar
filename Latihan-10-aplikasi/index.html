@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="VueApp">
+        <h1>Tempat Belajar</h1>
+        <p>Total selesai: {{ total }}</p>
+
+        <!-- Menampilkan blog -->
+        <blog-post 
+            v-for="(post, index) in blog" 
+            :key="index" 
+            :title="post.title" 
+            :desc="post.desc" 
+            :image="post.image" 
+            @update-total="updateTotal">
+        </blog-post>
+
+<!-- Menampilkan fitur utama -->
+        <h2>
+            <input 
+                type="checkbox" 
+                name="fitur" 
+                id="fitur-main" 
+                @change="updateTotalFitur($event)">
+            <label for="fitur-main">
+                🚀 Fitur Utama Vue.js
+            </label>    
+        </h2>
+        <fitur 
+            v-for="(item, index) in fitur" 
+            :key="index" 
+            :title="item.title" 
+            :desc="item.desc"
+            @update-total="updateTotal">
+        </fitur>
+    </div>
+
+    <script type="text/x-template" id="blog">
+        <div class="box" :class="boxClass">
+            <h2>
+                <input 
+                    type="checkbox" 
+                    :id="'checkbox-' + title" 
+                    @change="handleCheckboxChange($event)">
+                <label :for="'checkbox-' + title">
+                    {{ title }}
+                </label>
+                <img :src="'img/' + image" width="25" alt="Blog Image">
+            </h2>
+            <p>{{ desc }}</p>
+        </div>
+    </script>
+    
+
+    <script type="text/x-template" id="fitur">
+        <div class="box">
+            <h3 :class="boxClass" @click="toggleActive">{{ title }}</h3> <!-- Click event to toggle active state -->
+            <p>{{ desc }}</p>
+        </div>
+    </script>
+    
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
