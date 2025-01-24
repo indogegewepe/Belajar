@@ -5,12 +5,12 @@
 ---
 
 # 📚 Topik yang Tersedia
-<li>**Laravel** : Framework PHP untuk pengembangan aplikasi web modern yang menawarkan sintaksis elegan dan ekosistem kaya fitur.
-<li>**JavaScript** : Bahasa pemrograman inti untuk pengembangan web, mencakup DOM manipulation, ES6+, dan berbagai teknik lainnya.
-<li>**HTML** : Dasar dari semua halaman web. Di sini, Anda akan menemukan panduan lengkap untuk membangun struktur website.
-<li>**Python** : Bahasa serbaguna untuk berbagai keperluan, termasuk analisis data, machine learning, hingga pengembangan aplikasi.
-<li>**C++** : Bahasa pemrograman berorientasi objek yang kuat untuk pengembangan aplikasi yang membutuhkan kinerja tinggi.
-<li>**Vue.Js** : Framework JavaScript progresif untuk membangun antarmuka pengguna modern dengan fitur-fitur reaktif yang canggih.
+<li> <strong>Laravel</strong> : Framework PHP untuk pengembangan aplikasi web modern yang menawarkan sintaksis elegan dan ekosistem kaya fitur.
+<li> <strong>JavaScript</strong> : Bahasa pemrograman inti untuk pengembangan web, mencakup DOM manipulation, ES6+, dan berbagai teknik lainnya.
+<li> <strong>HTML</strong> : Dasar dari semua halaman web. Di sini, Anda akan menemukan panduan lengkap untuk membangun struktur website.
+<li> <strong>Python</strong> : Bahasa serbaguna untuk berbagai keperluan, termasuk analisis data, machine learning, hingga pengembangan aplikasi.
+<li> <strong>C++</strong> : Bahasa pemrograman berorientasi objek yang kuat untuk pengembangan aplikasi yang membutuhkan kinerja tinggi.
+<li> <strong>Vue.Js</strong> : Framework JavaScript progresif untuk membangun antarmuka pengguna modern dengan fitur-fitur reaktif yang canggih.
 
 ---
 
